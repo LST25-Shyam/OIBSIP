@@ -1,0 +1,289 @@
+/* ==========================================
+   CSS Variables & Reset
+   ========================================== */
+:root {
+  --bg-primary: #0f172a; /* Dark slate background */
+  --bg-secondary: #1e293b; /* Card & Section background */
+  --bg-accent: #111827; /* Quote section contrast background */
+  --accent-color: #38bdf8; /* Cyan accent */
+  --text-primary: #f8fafc; /* White/Light text */
+  --text-secondary: #94a3b8; /* Muted text */
+  --text-body: #cbd5e1;
+  --font-heading: "Cinzel", serif; /* Serif Font 1 */
+  --font-body: "Plus Jakarta Sans", sans-serif; /* Sans-serif Font 2 */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==========================================
+   Hero Header Section
+   ========================================== */
+.hero-section {
+  background: linear-gradient(180deg, #1e1b4b 0%, var(--bg-primary) 100%);
+  padding: 60px 0 30px;
+  text-align: center;
+}
+
+.sub-tag {
+  display: inline-block;
+  background: rgba(56, 189, 248, 0.1);
+  color: var(--accent-color);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.main-title {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   Image Section
+   ========================================== */
+.image-section {
+  padding: 30px 0;
+}
+
+.img-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 0 auto;
+}
+
+.img-caption {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* ==========================================
+   Quote Section (2nd Background Color)
+   ========================================== */
+.quote-section {
+  background-color: var(--bg-accent);
+  padding: 50px 0;
+  margin: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.featured-quote {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  text-align: center;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.featured-quote cite {
+  display: block;
+  margin-top: 15px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* ==========================================
+   Biography Section
+   ========================================== */
+.bio-section {
+  padding: 30px 0;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-color);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.bio-content p {
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+  color: var(--text-body);
+  text-align: justify;
+}
+
+/* ==========================================
+   Timeline Section
+   ========================================== */
+.timeline-section {
+  padding: 40px 0 60px;
+}
+
+.timeline-list {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid rgba(56, 189, 248, 0.3);
+  margin-top: 30px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -26px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  box-shadow: 0 0 10px var(--accent-color);
+}
+
+.time-badge {
+  display: inline-block;
+  background: var(--bg-secondary);
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  margin-bottom: 6px;
+}
+
+.time-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.time-content p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+/* ==========================================
+   Footer Section
+   ========================================== */
+.footer {
+  background-color: var(--bg-secondary);
+  padding: 30px 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.95rem;
+}
+
+.footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* ==========================================
+   Responsive Design
+   ========================================== */
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 2.1rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .featured-quote {
+    font-size: 1.25rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .timeline-list {
+    padding-left: 15px;
+  }
+
+  .timeline-item::before {
+    left: -21px;
+  }
+}
+
+
+a:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
