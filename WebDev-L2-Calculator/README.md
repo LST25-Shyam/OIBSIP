@@ -2,6 +2,8 @@
 
 A responsive, interactive, and user-friendly browser-based calculator built with HTML5, CSS3, and modern Vanilla JavaScript.
 
+🌐 **[View Live Demo](https://oibsip-webdev-l2-calculator-silk.vercel.app/)**
+
 ## 🚀 Features
 
 - **Standard Operations:** Addition, Subtraction, Multiplication, and Division.
