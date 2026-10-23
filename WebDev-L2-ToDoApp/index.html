@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Track | Modern To-Do Web App (OIBSIP Task 3)</title>
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo">
+        <i class="fa-solid fa-square-check"></i>
+        <span>TaskTrack</span>
+      </div>
+      <p class="subtitle">Organize your daily workflow effortlessly</p>
+    </header>
+
+    <!-- Input Form -->
+    <form id="todo-form" class="todo-form">
+      <div class="input-group">
+        <input type="text" id="task-title" placeholder="What needs to be done?" required autocomplete="off">
+      </div>
+      <div class="input-group">
+        <textarea id="task-desc" placeholder="Add additional details or notes (optional)" rows="2"></textarea>
+      </div>
+      <button type="submit" id="add-btn" class="btn btn-primary">
+        <i class="fa-solid fa-plus"></i> Add Task
+      </button>
+    </form>
+
+    <!-- Task Sections -->
+    <div class="tasks-wrapper">
+      
+      <!-- Pending Tasks Column -->
+      <section class="task-column">
+        <div class="column-header">
+          <h2><i class="fa-regular fa-clock"></i> Pending Tasks</h2>
+          <span id="pending-count" class="count-badge">0</span>
+        </div>
+        <ul id="pending-list" class="task-list">
+          <!-- Pending tasks dynamically inserted here -->
+        </ul>
+        <div id="pending-empty" class="empty-state">
+          <i class="fa-regular fa-calendar-check"></i>
+          <p>No pending tasks. You're all caught up!</p>
+        </div>
+      </section>
+
+      <!-- Completed Tasks Column -->
+      <section class="task-column">
+        <div class="column-header">
+          <h2><i class="fa-solid fa-circle-check"></i> Completed Tasks</h2>
+          <span id="completed-count" class="count-badge success">0</span>
+        </div>
+        <ul id="completed-list" class="task-list">
+          <!-- Completed tasks dynamically inserted here -->
+        </ul>
+        <div id="completed-empty" class="empty-state">
+          <i class="fa-regular fa-circle"></i>
+          <p>No completed tasks yet.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>Developed with ❤️ by <strong>Shyam Saha</strong> for Oasis Infobyte (OIBSIP Level 2 - Task 3)</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
