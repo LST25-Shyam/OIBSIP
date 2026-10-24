@@ -2,6 +2,10 @@
 
 A secure and modern Login & Registration Web App built with HTML5, CSS3, and JavaScript (ES6) featuring LocalStorage authentication simulation, password visibility toggles, and password recovery for the Oasis Infobyte Internship (OIBSIP).
 
+🌐 **Live Demo:** [https://oibsip-webdev-l2-loginauth-seven.vercel.app/](https://oibsip-webdev-l2-loginauth-seven.vercel.app/)
+
+---
+
 ## 🚀 Key Features & Implementation
 
 - [x] **User Registration (Sign Up):** Allows new users to register with name, email, and password stored safely in browser LocalStorage.
@@ -19,4 +23,9 @@ A secure and modern Login & Registration Web App built with HTML5, CSS3, and Jav
 - **JavaScript (ES6):** State validation, LocalStorage management, DOM event handling.
 
 ---
-Developed with ❤️ by **Shyam Saha** for Oasis Infobyte Internship Program (OIBSIP).
+
+## 💻 How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/LST25-Shyam/OIBSIP.git](https://github.com/LST25-Shyam/OIBSIP.git)
